@@ -6,8 +6,8 @@ function addTask() {
     alert("you Must write something");
   } else {
     let li = document.createElement("li");
-    li.innerHTML = inputBox.value;
-    li.innerHTML = '<i class="fa fa-circle" aria-hidden="true"></i>';
+   
+    li.innerHTML = '<i class="fa fa-circle" aria-hidden="true"></i>'+inputBox.value;
     listContainer.appendChild(li);
     let span = document.createElement("span");
     span.innerHTML = "\u00d7";
